@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  slackBaseUrl: 'https://api.slack.com'
+  slackBaseUrl: 'https://slack.com/api'
 };

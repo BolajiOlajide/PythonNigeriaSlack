@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  slackBaseUrl: 'https://slack.com/api'
 };
