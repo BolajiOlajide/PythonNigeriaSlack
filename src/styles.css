@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+/* @import url(//codepen.io/chrisdothtml/pen/ojLzJK.css); */
+@import url('https://fonts.googleapis.com/css?family=Saira+Condensed');
+
+:root {
+  --yellow: #ffc600;
+  --black: #272727;
+}
+
+
+html {
+  /* border-box box model allows us to add padding and border to our elements without increasing their size */
+  box-sizing: border-box;
+  /* A system font stack so things load nice and quick! */
+  font-family: 'Saira Condensed', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: 900;
+  font-size: 10px;
+  color: var(--black);
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+}
+
+/*
+  WAT IS THIS?!
+  We inherit box-sizing: border-box; from our <html> selector
+  Apparently this is a bit better than applying box-sizing: border-box; directly to the * selector
+*/
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  /* background-image: url("http://res.cloudinary.com/proton/image/upload/v1513132156/jakob-owens-199505_pq3vd2.jpg"),
+    linear-gradient(110deg, #f93d66, #6d47d9); */
+  background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./assets/images/farzad-nazifi-71686.jpg"),
+    linear-gradient(110deg, #f93d66, #6d47d9);
+  background-size: 340px, auto;
+  min-height: calc(100vh - 100px);
+  margin: 50px;
+  /* background: white; */
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  letter-spacing: -1px;
+  width: 100vw;
+  height: 100vh;
+}
