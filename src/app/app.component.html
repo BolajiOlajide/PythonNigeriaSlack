@@ -6,11 +6,11 @@
 </div>
 <div class="container">
   <!-- <ng4-twitter-timeline [dataSrc]="{sourceType: 'profile',screenName: 'Bolaji___'}" [opts]="{tweetLimit: 2, height: '400', borderColor: '#ffc600'}"></ng4-twitter-timeline> -->
-  <ng4-twitter-timeline [dataSrc]="{sourceType: 'profile',url: 'PythonNigeria'}" [opts]="{tweetLimit: 2, height: '400', borderColor: '#ffc600'}"></ng4-twitter-timeline>
+  <!-- <ng4-twitter-timeline [dataSrc]="{sourceType: 'profile',url: 'PythonNigeria'}" [opts]="{tweetLimit: 2, height: '400', borderColor: '#ffc600'}"></ng4-twitter-timeline> -->
   <form class='slack-invite'>
-    <img width="300" src="https://res.cloudinary.com/proton/image/upload/v1516492134/python-nigeria_ittomi.svg">
+    <!-- <img width="300" src="https://res.cloudinary.com/proton/image/upload/v1516492134/python-nigeria_ittomi.svg"> -->
     <h4> Enter your email below to join Python Nigeria on Slack! </h4>
-    <input type="email" class="form-control slack-input" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email Address">
+    <input [(ngModel)]="email" type="email" class="form-control slack-input" id="exampleInputEmail1" placeholder="Enter email Address">
     <br />
     <button type="button" class="btn btn-primary btn-lg">Join Us!</button>
   </form>

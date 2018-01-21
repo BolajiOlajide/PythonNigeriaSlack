@@ -5,6 +5,10 @@ import { HttpModule } from '@angular/http';
 // 3rd-party modules
 import { Ng4TwitterTimelineModule } from 'ng4-twitter-timeline/lib/index';
 
+// services
+import { SlackService } from './slack.service';
+import { ToastrService } from './toastr.service';
+
 import { AppComponent } from './app.component';
 
 @NgModule({
@@ -16,7 +20,7 @@ import { AppComponent } from './app.component';
     Ng4TwitterTimelineModule,
     HttpModule
   ],
-  providers: [],
+  providers: [ SlackService, ToastrService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
