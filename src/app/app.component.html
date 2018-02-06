@@ -1,17 +1,16 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-</div>
-<div class="container">
-  <!-- <ng4-twitter-timeline [dataSrc]="{sourceType: 'profile',screenName: 'Bolaji___'}" [opts]="{tweetLimit: 2, height: '400', borderColor: '#ffc600'}"></ng4-twitter-timeline> -->
-  <!-- <ng4-twitter-timeline [dataSrc]="{sourceType: 'profile',url: 'PythonNigeria'}" [opts]="{tweetLimit: 2, height: '400', borderColor: '#ffc600'}"></ng4-twitter-timeline> -->
+<div class="main">
+  <div style="text-align:center">
+    <img width="300" src="https://res.cloudinary.com/proton/image/upload/v1516492134/python-nigeria_ittomi.svg">
+    <h1>
+      Welcome to {{title}}!
+    </h1>
+  </div>
   <form class='slack-invite'>
-    <!-- <img width="300" src="https://res.cloudinary.com/proton/image/upload/v1516492134/python-nigeria_ittomi.svg"> -->
-    <h4> Enter your email below to join Python Nigeria on Slack! </h4>
-    <input [(ngModel)]="email" type="email" class="form-control slack-input" id="exampleInputEmail1" placeholder="Enter email Address">
+    <h3> Enter your email below to join Python Nigeria on Slack! </h3>
+    <input type="email" name="email" class="form-control slack-input" id="exampleInputEmail1" placeholder="Enter email Address"
+      [(ngModel)]="email">
     <br />
-    <button type="button" class="btn btn-primary btn-lg">Join Us!</button>
+    <button type="button" class="btn btn-primary btn-lg" (click)="sendInvite()" required>Join Us!</button>
   </form>
 </div>

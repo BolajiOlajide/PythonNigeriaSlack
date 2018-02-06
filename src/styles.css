@@ -18,6 +18,10 @@ html {
   font-size: 10px;
   color: var(--black);
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.07);
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  max-width: 100vw;
 }
 
 /*
@@ -32,18 +36,16 @@ html {
 }
 
 body {
-  /* background-image: url("http://res.cloudinary.com/proton/image/upload/v1513132156/jakob-owens-199505_pq3vd2.jpg"),
-    linear-gradient(110deg, #f93d66, #6d47d9); */
-  background: linear-gradient(0deg,rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("./assets/images/farzad-nazifi-71686.jpg"),
-    linear-gradient(110deg, #f93d66, #6d47d9);
-  background-size: 340px, auto;
+  background-image: url("http://res.cloudinary.com/proton/image/upload/v1513132156/jakob-owens-199505_pq3vd2.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: calc(100vh - 100px);
-  margin: 50px;
-  /* background: white; */
   background-position: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   letter-spacing: -1px;
   width: 100vw;
   height: 100vh;
+  max-height: 100vh;
 }

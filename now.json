@@ -1,0 +1,9 @@
+{
+  "alias": "py-nigeria-slack",
+  "env": {
+    "NODE_ENV": "@node_env",
+    "PORT": "@port",
+    "SLACK_TOKEN": "@slack_token",
+    "INVITE_URL": "@invite_url"
+  }
+}
