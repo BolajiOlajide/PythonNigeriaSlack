@@ -34,6 +34,7 @@
     "koa-logger": "^3.1.0",
     "koa-respond": "^1.0.1",
     "koa-router": "^7.4.0",
+    "koa-static": "^4.0.2",
     "ng2-twitter": "^0.3.0",
     "rxjs": "^5.5.2",
     "toastr": "^2.1.4",

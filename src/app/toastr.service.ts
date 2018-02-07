@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 // 3rd party library
-import Toastr from 'toastr';
+import * as Toastr from 'toastr';
 
 declare let toastr: any;
 
@@ -11,7 +11,15 @@ export class ToastrService {
   constructor() { }
 
   success(message: string) {
-    Toastr.success(message);
+    return Toastr.success(message);
+  }
+
+  error(message: string) {
+    return Toastr.error(message);
+  }
+
+  info(message: string) {
+    return Toastr.info(message);
   }
 
 }

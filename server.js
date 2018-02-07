@@ -8,6 +8,7 @@ const bodyParser = require('koa-bodyparser');
 const helmet = require('koa-helmet');
 const respond = require('koa-respond');
 const axios = require('axios');
+const serve = require('koa-static');
 
 const app = new Koa();
 const router = new Router();
@@ -30,7 +31,9 @@ app.use(bodyParser({
 
 app.use(respond());
 
-router.get('/', async (ctx) => {
+app.use(serve("./dist/"));
+
+router.get('/health', async (ctx) => {
   ctx.body = {
     status: 'success',
     message: 'hello, world!'
@@ -68,5 +71,5 @@ router.post('/api/invite', async (ctx) => {
 
 app.use(router.routes());
 
-const port = process.env.PORT || 3000
-app.listen(port, () => winston.info(`API server started on ${port}`))
+const port = process.env.PORT || 3000;
+app.listen(port, () => winston.info(`API server started on ${port}`));

@@ -36,7 +36,7 @@ html {
 }
 
 body {
-  background-image: url("http://res.cloudinary.com/proton/image/upload/v1513132156/jakob-owens-199505_pq3vd2.jpg");
+  background-image: url("./assets/images/bg2-min-min.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
